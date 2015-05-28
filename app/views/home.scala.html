@@ -1,0 +1,14 @@
+@(message: String)
+
+@main("Home") {
+
+    <h1>Welcome @message</h1>
+    List of available services
+    <ul>
+    	<a href="@routes.Service.priceList()"><li>Price list</li></a>
+    	<li>Pre order</li>
+    	<li>Photo gallery</li>
+    	<li>News feed</li>
+    </ul>
+    <a href="@routes.Application.index()">Back to Main</a>
+}
